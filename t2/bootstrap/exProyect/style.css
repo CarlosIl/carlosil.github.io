@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.primaryColor {background-color: #EEEEEE;}
+.primaryDarkColor {background-color: #BCBCBC;}
+.secondaryColor {color: #F53B3B;}
+.secondaryLigthColor {color: #FF5131;}
+.secondaryDarkColor {color: #9B0000;}

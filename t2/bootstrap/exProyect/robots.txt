@@ -1,0 +1,3 @@
+User-agent: *
+Allow: *
+Sitemap: https://carlosil.github.io/SahagunWeb/sitemap.xml
