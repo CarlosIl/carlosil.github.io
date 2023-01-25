@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/carnet.jpg">
+</head>
+<title>Work experience</title>
+</head>
+
+<body class="yellow darken-3">
+
+    <nav>
+        <div class="nav-wrapper blue darken-2">
+            <a href="index.html" class="brand-logo">Curriculum</a>
+            <a href="#" class="sidenav-trigger right" data-target="menu-side"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="education.html">Academic education</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="work.html">Work experience</a></li>
+                <li><a href="skills.html">Computer skills</a></li>
+                <li><a href="parallax.html">Parallax effect info</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Sidenav-->
+        <ul class="sidenav yellow darken-3" id="menu-side">
+            <li>
+                <div class="user-view center">
+                    <img src="img/carnet.jpg" alt="fotoCarlos" height="35%" width="35%">
+                    <h6 class="white-text"> Carlos Ildefonso García Gil </h6>
+                    <a href="mailto:carlosi.gargil@educa.jcyl.es">Contacto</a>
+                </div>
+            </li>
+            <li><a href="education.html">Academic education</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="work.html">Work experience</a></li>
+            <li><a href="skills.html">Computer skills</a></li>
+            <li><a href="parallax.html">Parallax effect info</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="container">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Year</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fundación General de la Universidad de Valladolid (Funge)</td>
+                        <td>2021</td>
+                        <td>Computer technician</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="page-footer blue darken-2">
+        <div class="container">
+            <h5 class="white-text">Social media</h5>
+            <a href="https://twitter.com" target="blank"> <img src="https://lcsi.umh.es/docs/twitter/pajarito.png"
+                    alt="" srcset="" height="50px" width="50px"></a>
+            <a href="https://instagram.com" target="blank"> <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                    alt="" srcset="" height="50px" width="50px"></a>
+            <a href="https://linkedin.com" target="blank"> <img
+                    src="https://cdn-icons-png.flaticon.com/128/1384/1384088.png" alt="" srcset="" height="50px"
+                    width="50px"></a>
+            <a href="https://masto.es" target="blank"> <img
+                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mastodon-black-square-icon.png"
+                    alt="" srcset="" height="50px" width="50px"></a>
+        </div>
+        <div class="footer-copyright blue darken-3">
+            <div class="container">
+                Author: Carlos Ildefonso García Gil
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+
+</body>

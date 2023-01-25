@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+
+<body class="blue lighten-2">
+
+    <nav>
+        <div class="nav-wrapper blue darken-2">
+            <img class="brand-logo" src="./resources/assets/logo.png">
+            <a class="sidenav-trigger right" data-target="menu-side"><button class="btn blue lighten-2">Open
+                    menu</button></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Sidenav-->
+        <ul class="sidenav blue lighten-2" id="menu-side">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <!--iF YOU DELETE THE M12 OPTION YOU HAVE THE SAME EFFECT BECAUSE S MEANS SMALL SCREEN AND ABOVE-->
+            <div class="col s12 m12 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light ">
+                        <img class="activator responsive-img"
+                            src="./resources/assets/parcelaConfort.jpg">
+                    </div>
+                    <div class="card-reveal blue darken-2 white-text">
+                        <span class="card-title">Description<i class="right">Close</i></span>
+                        <p>Plot of 70 m2, equipped with a 10Amp light socket. With abundant shade, ideal for family
+                            equipment. The price includes car and tent or caravan plus auxiliary tent. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light ">
+                        <img class="activator responsive-img"
+                            src="./resources/assets/bungalowComillas.png">
+                    </div>
+                    <div class="card-reveal blue darken-2 white-text">
+                        <span class="card-title">Description<i class="right">Close</i></span>
+                        <p>The Comillas Bungalows, also made of wood, have a double room, a comfortable and
+                            spacious bathroom and a kitchen-living room with a sofa bed. Its maximum capacity is three
+                            occupants and they are fully equipped with bed and bath linen, kitchenware, TV, microwave,
+                            heating, etc. Pets are allowed </p>                            
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light ">
+                        <img class="activator responsive-img"
+                            src="./resources/assets/bungalowPicos.png">
+                    </div>
+                    <div class="card-reveal blue darken-2 white-text">
+                        <span class="card-title">Description<i class="right">Close</i></span>
+                        <p>Small Wooden Houses of approx 35 m2 made up of two bedrooms, one with two single
+                            beds and the other with bunk beds, a kitchen-living room and a bathroom. They are fully
+                            equipped with bed and bath linen, kitchenware, TV... They have independent parking next to
+                            the Bungalow Pets are allowed in this type of bungalow, but it is not allowed to leave them
+                            alone in the accommodation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light ">
+                        <img class="activator responsive-img"
+                            src="./resources/assets/apartamentoselcardeo.png">
+                    </div>
+                    <div class="card-reveal blue darken-2 white-text">
+                        <span class="card-title">Description<i class="right">Close</i></span>
+                        <p> We are located in the small town of La Revilla, a beautiful town in the epicenter of the
+                            Oyambre Natural Park and just 4 kilometers from San Vicente de la Barquera and its fabulous
+                            beaches.</p>
+                            <p> Once here you will be able to enjoy the particularity of our environment, highlighting the
+                            natural contrast of having the sea and mountains so close. You can relax walking along the
+                            shores of the Cantabrian Sea, on any of the beaches that surround us, watching in the
+                            background how the mountains of the majestic Picos de Europa rise or approach the "Mirador
+                            de la Pita" to obtain a panoramic view of the Ría of San Vicente, the Rubín marshes and the
+                            Picos de Europa in the background.</p>
+                            <p> Come with us, enjoy nature, the gastronomy of the area and an endless number of
+                            activities that you can do as a family, as a couple or with friends (surfing, walking routes,
+                            horseback riding, golf, canoeing, etc...).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+    </script>
+
+</body>
+
+</html>

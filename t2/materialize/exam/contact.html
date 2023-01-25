@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+
+<body class="blue lighten-2">
+
+    <nav>
+        <div class="nav-wrapper blue darken-2">
+            <img class="brand-logo" src="./resources/assets/logo.png">
+            <a class="sidenav-trigger right" data-target="menu-side"><button class="btn blue lighten-2">Open
+                    menu</button></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Sidenav-->
+        <ul class="sidenav blue lighten-2" id="menu-side">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col s12 m6">
+
+                    <div class="input-field blue darken-2">
+                        <input placeholder="Name" id="nombre" type="text" class="white-text">
+                    </div>
+
+                </div>
+                <div class="col s12 m6">
+
+                    <div class="input-field blue darken-2">
+                        <input placeholder="Surnames" id="nombre" type="text" class="white-text">
+                    </div>
+
+                </div>
+                <div class="col s12 m6">
+
+                    <div class="input-field blue darken-2">
+                        <input placeholder="ID" id="nombre" type="text" class="white-text">
+                    </div>
+
+                </div>
+                <div class="col s12 m6">
+
+                    <div class="input-field blue darken-2">
+                        <input placeholder="Email" id="nombre" type="email" class="white-text">
+                    </div>
+
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content blue darken-2 white-text">
+                            <span class="card-title">Choose your vacations</span>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span class="white-text">Parcela confort</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span class="white-text">Bungalow comillas</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span class="white-text">Bungalow picos</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span class="white-text">Apartamentos el cardeo</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--FOR SOLVE YOUR PROBLEM WITH THE COLOR IN THE DATEPICKER YOU HAVE TO CHANGE THE COLOR IN THE PARENT DIV.
+                    SOMETHING LIKE THAT
+                    <div class="col s12 m6 input-field blue darken-2">
+                        <label>Date of entry:</label>
+                        <input id="fecha2" type="text" class="datepicker">
+                    </div>
+                    -->
+                <div class="col s12 m6 input-field blue darken-2 white-text">
+                        <label>Date of entry:</label>
+                        <input id="fecha2" type="text" class="datepicker">
+                    </div>
+                </div>
+                <div class="col s12 m6 input-field blue darken-2 white-text">
+                    <label>Date of departure:</label>
+                    <input id="fecha1" type="text" class="datepicker">
+                </div>
+                </div>
+                <div class="col s12 m6">
+
+                    <div class="input-field blue darken-2">
+                        <input placeholder="Number of people who are going to go" id="nombre" type="number" class="white-text">
+                    </div>
+
+                </div>
+                <div class="col s12 m6">
+                        <textarea class="white-text blue darken-2"></textarea>
+                </div>
+
+                    <!-- <div class="input-field col s12 m6 blue darken-2 ">
+                    <input placeholder="Surnames" id="nombre" type="text" class="white-text">
+                </div>
+                <div class="input-field col s12 m6 blue darken-2 ">
+                    <input placeholder="ID" id="nombre" type="text" class="white-text">
+                </div>
+                <div class="input-field col s12 m6 blue darken-2 ">
+                    <input placeholder="Email" id="nombre" type="email" class="white-text">
+                </div> -->
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        //Utilizo AutoInit para que funcione el calendario
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+
+        //Utilizo AutoInit para que funcione el efecto parallex
+        // M.AutoInit();
+
+    </script>
+
+</body>
+
+</html>

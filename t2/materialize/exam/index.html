@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+
+<body class="blue lighten-2">
+
+    <nav>
+        <div class="nav-wrapper blue darken-2">
+            <img class="brand-logo" src="./resources/assets/logo.png">
+
+            <!--WHY DONT YOU USE AN ICON INSTED OF A BUTTON-->
+            <a class="sidenav-trigger right" data-target="menu-side"><button class="btn blue lighten-2">Open
+                    menu</button></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Sidenav-->
+        <ul class="sidenav blue lighten-2" id="menu-side">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="parallax-container">
+
+        <!--iF YOU ADD CLASS="RESPONSIVE-IMG" IN YOUR IMAGES IS BETTER FOR THE SMALLER DEVICES-->
+        <div class="parallax"><img src="./resources/assets/paralax1.jpg"></div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l6">
+            <div class="video-container">
+                <iframe class="center-align" width="50%" height="100%" src="https://www.youtube.com/embed/Zyz2uLwT-Js"
+                    title="Spot Camping Caravaning Oyambre" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encryptedmedia; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col s12 l6 flow-text">
+            <h4>The best facilities</h4>
+            <p>Delimited plots, bungalows, cabins, swimming pool, cafeteria, restaurant, playground... For
+                your best vacations.</p>
+            <h4>Fun and entertainment are an important part of the tourist offer in Cantabria</h4>
+            <p>On the cultural level, Cantabria offers a great quantity and variety of possibilities. </p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="./resources/assets/paralax2.jpg"></div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l6 flow-text">
+            <h4> Outdoor pool: </h4>
+            <p>200 m2 pool with a maximum depth of 1.60 m and an L-shaped pool with a shallow depth
+                for the enjoyment of the little ones.</p>
+            <p>Around the pools there are a number of loungers for your use.</p>
+        </div>
+        <div class="col s12 l6 flow-text">
+            <h4>Indoor Pool:</h4>
+            <p>Indoor pool of 50 m2 and 1.50 m deep, whose water is close to 25°C surrounded by a huge
+                window that allows you to enjoy the bath watching the landscape.< /p>
+                    <p>Culturally speaking, Cantabria offers a great number and variety of possibilities. </p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="./resources/assets/paralax3.jpg"></div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l6">
+            <div class="video-container">
+                <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.6211889182255!2
+d4.340575184510937!3d43.38494417913138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!
+1m2!1s0xd490b3faf115a8d%3A0x2a60a79785fbde14!2sCaravaning%20Oyambre%20Cantabri
+a!5e0!3m2!1ses!2ses!4v1673792808470!5m2!1ses!2ses" width="600" height="450"
+style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-whendowngrade"></iframe>
+            </div>
+        </div>
+        <div class="col s12 l6 flow-text">
+            <h4>Visit our facilities</h4>
+            <p>In San Vicente de la Barquera, Cantabria</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--YOU DON'T NEED A VIDEO CONTAINER IS A CAROUSEL CAROUSEL-SLIDER AND YOU HAVE TO ADD RESPONSIVE-IMGS-->
+        <div class="carousel carousel-slider video-container">
+            <a class="carousel-item"><img src="./resources/assets/carousel1.jpg"></a>
+            <a class="carousel-item"><img src="./resources/assets/carousel2.jpg"></a>
+            <a class="carousel-item"><img src="./resources/assets/carousel3.jpg"></a>
+            <a class="carousel-item"><img src="./resources/assets/carousel4.webp"></a>
+          </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var elems = document.querySelectorAll('.sidenav');
+        //     var instances = M.Sidenav.init(elems);
+        // });
+
+        //Utilizo AutoInit para que funcione el efecto parallex
+        M.AutoInit();
+
+    </script>
+</body>
+
+</html>
